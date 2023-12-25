@@ -17,30 +17,30 @@ Explore the extensive dataset, available [here](https://drive.google.com/drive/f
 8. **products.csv:** Product details, categories, and dimensions.
 
 ### Problem Statement
-As a Target data analyst, the goal is to perform a thorough analysis. Key exploration points include:
+The goal is to perform a thorough analysis. Key exploration points include:
 
-1. **Basic Exploratory Analysis:**
+1. **Basic Exploratory Analysis**
    - Check data types in the "customers" table.
    - Determine the time range for order placements.
    - Count cities and states of customers who ordered during the given period.
 
-2. **In-Depth Exploration:**
+2. **In-Depth Exploration**
    - Identify trends and seasonality in order placements.
    - Analyze the preferred time of day for Brazilian customers to place orders.
   
-3. **Evolution of E-commerce Orders in Brazil:**
+3. **Evolution of E-commerce Orders in Brazil**
    - Examine month-on-month orders in each state.
    - Explore the distribution of customers across states.
 
-4. **Impact on Economy:**
+4. **Impact on Economy**
    - Analyze money movement, calculating % increase in order costs from 2017 to 2018.
    - Calculate total and average order prices and freights for each state.
 
-5. **Sales, Freight, and Delivery Time Analysis:**
+5. **Sales, Freight, and Delivery Time Analysis**
    - Determine days taken to deliver each order and the difference between estimated and actual delivery dates.
    - Identify top 5 states with the highest/lowest average freight and delivery time.
 
-6. **Payment Analysis:**
+6. **Payment Analysis**
    - Examine month-on-month orders based on payment types.
    - Investigate orders based on payment installments.
 
