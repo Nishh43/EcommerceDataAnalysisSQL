@@ -1,6 +1,6 @@
 # TargetBrazilEcommerceAnalysis
 
-## "Target Brazil E-commerce Operations - Data Analysis using SQL"
+## Target Brazil E-commerce Operations - Data Analysis using SQL
 
 Welcome to the Target Brazil E-commerce Analysis project! In this repository, we delve into a rich dataset comprising 100,000 orders placed between 2016 and 2018, shedding light on Target's operations in Brazil. As a data analyst/scientist at Target, our mission is to extract valuable insights and provide actionable recommendations.
 
