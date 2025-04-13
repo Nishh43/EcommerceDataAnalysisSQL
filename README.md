@@ -1,8 +1,17 @@
-# TargetBrazilEcommerceAnalysis
+# 📊 Target Brazil: E-commerce Analytics Case Study (2016–2018) 
 
-## Target Brazil E-commerce Operations - Data Analysis using SQL
+Welcome to a comprehensive case study analyzing **Target's Brazilian e-commerce operations** from 2016 to 2018. In this repository, we delve into a rich dataset comprising 100,000 orders placed between 2016 and 2018, leveraging **SQL** for deep data exploration to extract actionable insights about **customer behavior, logistics performance, payment trends, and sales evolution**. 
 
-Welcome to the Target Brazil E-commerce Analysis project! In this repository, we delve into a rich dataset comprising 100,000 orders placed between 2016 and 2018, shedding light on Target's operations in Brazil. As a data analyst/scientist at Target, our mission is to extract valuable insights and provide actionable recommendations.
+## 🎯 Objective
+
+To help Target optimize its Brazilian e-commerce strategy through **data-driven decisions** by:
+
+- Understanding **customer distribution and behavior**
+- Analyzing **order volume trends** and **seasonality**
+- Evaluating **logistics efficiency** and **delivery accuracy**
+- Investigating **economic impact** via payment patterns and order value
+- Recommending improvements in **regional operations and customer experience**
+
 
 ### Dataset Overview
 Explore the extensive dataset, available [here](https://drive.google.com/drive/folders/1TGEc66YKbD443nslRi1bWgVd238gJCnb), organized into 8 CSV files:
@@ -16,41 +25,69 @@ Explore the extensive dataset, available [here](https://drive.google.com/drive/f
 7. **reviews.csv:** Customer reviews with scores and comments.
 8. **products.csv:** Product details, categories, and dimensions.
 
-### Problem Statement
-The goal is to perform a thorough analysis. Key exploration points include:
-
-1. **Basic Exploratory Analysis**
-   - Check data types in the "customers" table.
-   - Determine the time range for order placements.
-   - Count cities and states of customers who ordered during the given period.
-
-2. **In-Depth Exploration**
-   - Identify trends and seasonality in order placements.
-   - Analyze the preferred time of day for Brazilian customers to place orders.
-  
-3. **Evolution of E-commerce Orders in Brazil**
-   - Examine month-on-month orders in each state.
-   - Explore the distribution of customers across states.
-
-4. **Impact on Economy**
-   - Analyze money movement, calculating % increase in order costs from 2017 to 2018.
-   - Calculate total and average order prices and freights for each state.
-
-5. **Sales, Freight, and Delivery Time Analysis**
-   - Determine days taken to deliver each order and the difference between estimated and actual delivery dates.
-   - Identify top 5 states with the highest/lowest average freight and delivery time.
-
-6. **Payment Analysis**
-   - Examine month-on-month orders based on payment types.
-   - Investigate orders based on payment installments.
-
 ### Dataset Schema
 ![Dataset Schema] https://drive.google.com/file/d/16lB1kFnOa2DmwMrVm2p6ObnDjpIYhrrC/view?usp=sharing
+
+The ER diagram (included below) shows how these tables are connected via keys like order_id, product_id, customer_id, and zip_code_prefix.
+![image](https://github.com/user-attachments/assets/f9a83d4c-1560-4682-8e05-77d1bb347b86)
+
+> Data spans from **2016 to 2018**, representing the full online retail funnel—from browsing to delivery and review.
+
+## 🧪 Analysis Modules & Key Questions
+
+### 1. 📦 Customer Profile & Order Distribution
+
+- What is the time range of order activity?
+- How many unique cities and states do customers come from?
+- What are the top regions with the highest customer density?
+
+### 2. 📈 Trends & Seasonality
+
+- Are orders increasing year-over-year?
+- What is the monthly seasonality pattern?
+- During which time of day are most orders placed? *(Dawn, Morning, Afternoon, Night)*
+
+### 3. 🌎 Regional Demand & Logistics
+
+- How are orders distributed across Brazilian states?
+- What are the monthly order counts per state?
+- Which states have the fastest or slowest delivery?
+
+### 4. 💸 Economic Impact & Price Trends
+
+- What is the YoY % increase in total order value (Jan–Aug, 2017 vs. 2018)?
+- What are the average order and freight costs per state?
+- How do payment installment behaviors vary?
+
+### 5. 🚚 Delivery Performance
+
+- What's the actual delivery time vs. estimated?
+- Which states consistently deliver faster than expected?
+- How can freight cost variation inform better shipping strategy?
+
+### 6. 💳 Payment Preferences
+
+- What are the most popular payment types each month?
+- How do installment plans impact order volume?
+- Which payment methods trend during specific seasons?
 
 ### Getting Started
 1. Clone this repository.
 2. Download the dataset from the provided Google Drive link.
 3. Follow the Python notebooks notebooks or scripts for detailed analysis.
 
-Let's uncover the story within the data and make informed decisions for enhancing Target's operations in Brazil!
+## 🛠️ Tools & Tech
 
+- SQL (BigQuery dialect)
+- Google BigQuery & Datalab (for exploration)
+- Excel/Tableau/Power BI (for visualization, optional)
+- Markdown (for documentation)
+
+## 📌 FAQs & SQL Concepts Covered
+
+✅ `INFORMATION_SCHEMA.COLUMNS`  
+✅ `COUNT()`, `DISTINCT`, `AVG()`  
+✅ `INNER JOIN` vs `LEFT JOIN` vs `RIGHT JOIN`  
+✅ `CTEs`, `LEAD()`, `LAG()`  
+✅ `TIMESTAMP_DIFF` vs `DATE_DIFF`  
+✅ Filtering strategies, grouping logic, and partitioning 
